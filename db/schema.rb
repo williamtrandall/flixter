@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_17_234550) do
+ActiveRecord::Schema.define(version: 2019_10_23_010023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_234550) do
     t.datetime "updated_at", null: false
     t.string "subtitle"
     t.string "title"
+    t.string "video"
     t.index ["section_id"], name: "index_lessons_on_section_id"
   end
 
